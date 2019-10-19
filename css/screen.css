@@ -18,7 +18,7 @@
     --global-color-dark: #0F3557;
     --global-color-light: #CCE7FF;
     /* opacity */
-
+    --global-mute: 0.6;
     /* transitions */
 }
 
@@ -267,8 +267,11 @@ input::placeholder {
     Website main logo
 */
 
-.c-logo {
-
+.c-logo 
+{
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
 }
 
 /*
@@ -277,12 +280,16 @@ input::placeholder {
     The sun
 */
 
-.c-sun {
-
+.c-sun 
+{
+    width: 22px;
+    height: 22px;
+    fill: var(--global-color-dark);
 }
 
-.c-logo .c-sun {
-
+.c-logo .c-sun 
+{
+    margin-right: 8px;
 }
 
 /*
@@ -294,7 +301,13 @@ input::placeholder {
 .c-app
 {
     width: 400px;
-    
+    margin: auto;
+}
+
+.c-app__summary
+{
+    font-size: 28px;
+    line-height: 40px;
 }
 
 /*
@@ -302,6 +315,11 @@ input::placeholder {
     ---
     Horizon with sun visualisation
 */
+
+.c-horizon__line
+{
+    background-color: green;
+}
 
 /*------------------------------------*\
 #UTILITIES
@@ -311,6 +329,11 @@ input::placeholder {
     Utilities: Mute
     Mute with opacity
 */
+
+.u-muted
+{
+    opacity: var(--global-mute);
+}
 
 /*------------------------------------*\
 #STATES
