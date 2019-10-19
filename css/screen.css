@@ -25,8 +25,8 @@
 @media (prefers-color-scheme: dark) {
     :root 
     {
-        --global-color-dark: var(--global-color-light);
-        --global-color-light: var(--global-color-dark);
+        --global-color-dark: #CCE7FF;
+        --global-color-light: #0F3557;
     }
 }
 
@@ -43,10 +43,13 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: "Work Sans", Helvetica, arial, sans-serif;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--global-color-light);
+    color: var(--global-color-dark);
+    font-feature-settings: "zero"1;
 }
 
 *,
@@ -287,6 +290,12 @@ input::placeholder {
     ---
     Main app wrapper
 */
+
+.c-app
+{
+    width: 400px;
+    
+}
 
 /*
     Component: Horizon
