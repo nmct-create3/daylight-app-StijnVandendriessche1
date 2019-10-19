@@ -2,16 +2,32 @@
 #FONTS
 \*------------------------------------*/
 
+@font-face
+{
+    font-family: 'Work Sans';
+    font-weight: 400;
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
 
 :root {
     /* colors */
-
+    --global-color-dark: #0F3557;
+    --global-color-light: #CCE7FF;
     /* opacity */
 
     /* transitions */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root 
+    {
+        --global-color-dark: var(--global-color-light);
+        --global-color-light: var(--global-color-dark);
+    }
 }
 
 /*------------------------------------*\
