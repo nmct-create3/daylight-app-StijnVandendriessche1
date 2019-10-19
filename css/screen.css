@@ -318,7 +318,11 @@ input::placeholder {
 
 .c-horizon__line
 {
-    background-color: green;
+    border-top: 1px solid var(--global-color-dark);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    margin-bottom: 34px;
 }
 
 /*------------------------------------*\
