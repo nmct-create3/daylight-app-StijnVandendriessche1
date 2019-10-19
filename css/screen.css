@@ -22,12 +22,10 @@
     /* transitions */
 }
 
-@media (prefers-color-scheme: dark) {
-    :root 
-    {
-        --global-color-dark: #CCE7FF;
-        --global-color-light: #0F3557;
-    }
+.is-night
+{
+    --global-color-dark: #CCE7FF;
+    --global-color-light: #0F3557;
 }
 
 /*------------------------------------*\
@@ -375,6 +373,13 @@ input::placeholder {
 .u-muted
 {
     opacity: var(--global-mute);
+}
+
+.u-bottom
+{
+    bottom:0;
+    position: absolute;
+    width: 400px;
 }
 
 /*------------------------------------*\
