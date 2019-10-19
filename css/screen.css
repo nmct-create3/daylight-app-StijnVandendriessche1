@@ -302,6 +302,7 @@ input::placeholder {
 {
     width: 400px;
     margin: auto;
+    margin-top: 32px;
 }
 
 .c-app__summary
@@ -323,6 +324,40 @@ input::placeholder {
     justify-content: space-between;
     padding-top: 7px;
     margin-bottom: 34px;
+}
+
+.c-horizon__time
+{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.c-horizon__sky-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.c-horizon__sky {
+    position: relative;
+    height: 100%;
+}
+
+.c-horizon__sun::before
+{
+    content: attr(data-time);
+}
+
+.c-horizon__sun {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 /*------------------------------------*\
